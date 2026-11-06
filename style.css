@@ -1,0 +1,16 @@
+/* NotiSort 소개 페이지 공용 모양 (앱과 같은 색: 먹색·흰색·형광 노랑) */
+:root{--ink:#202326;--marker:#FFE066;--muted:#80868F;--gray:#F3F4F6;--rail:#DADDE2}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7}
+main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:32px;font-weight:800;letter-spacing:-.5px;margin:0 0 8px}
+h2{font-size:20px;margin:36px 0 8px}
+h3{font-size:16px;margin:20px 0 4px}
+p,li{font-size:15px}
+.lead{font-size:17px;color:#3B4047}
+.muted{color:var(--muted);font-size:13px}
+mark{background:linear-gradient(transparent 45%,var(--marker) 45%);color:inherit;padding:0 2px}
+.card{background:var(--gray);border-radius:18px;padding:16px 20px;margin:12px 0}
+a{color:var(--ink);text-decoration-color:var(--marker);text-decoration-thickness:3px;text-underline-offset:3px}
+nav{display:flex;gap:16px;margin-bottom:32px;font-weight:600;font-size:14px}
+hr{border:0;border-top:1px solid var(--rail);margin:40px 0}

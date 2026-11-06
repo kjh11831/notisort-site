@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotiSort 개인정보처리방침</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">NotiSort</a><a href="privacy.html">개인정보처리방침</a></nav>
+
+<h1>개인정보처리방침</h1>
+<p class="muted">시행일: 2026년 11월 6일</p>
+
+<p class="lead">NotiSort는 알림 내용을 <mark>사용자의 폰 안에만</mark> 저장해요. 개발자는 사용자의 알림 내용을 받거나 볼 수 없어요.</p>
+
+<h2>1. 어떤 정보를 다루나요</h2>
+<ul>
+<li><b>알림 내용</b>: 사용자가 "알림 접근"을 허용하면, 폰에 온 알림의 앱 이름, 보낸 사람, 제목, 본문, 받은 시각 같은 글자 정보를 기록해요. 음악 재생처럼 계속 떠 있는 알림은 기록하지 않아요.</li>
+<li><b>다시 띄우기용 자료</b>: 보호한 알림을 다시 띄우려고, 알림창에 떠 있는 동안만 보낸 사람 사진(작게 줄인 것)을 함께 보관하고, 알림을 확인하거나 지우면 삭제해요.</li>
+<li><b>설정</b>: 등록한 키워드, 같은 계정 묶음, 보호한 앱, 정한 순서.</li>
+</ul>
+
+<h2>2. 어디에 저장되나요</h2>
+<ul>
+<li>위 정보는 모두 <b>폰 안의 앱 저장 공간</b>에 저장돼요.</li>
+<li>개발자 서버는 없어요. 정보를 개발자나 다른 회사에 보내거나 팔지 않아요.</li>
+<li>광고, 사용 분석, 오류 수집 도구를 넣지 않았어요.</li>
+</ul>
+
+<h2>3. 백업 (사용자가 켰을 때만)</h2>
+<div class="card">
+<h3>폰 폴더 백업</h3>
+<p>사용자가 직접 고른 폰 안 폴더에 기록과 설정을 파일로 저장해요. 파일은 암호 없이 저장되니, 폰 파일을 볼 수 있는 사람은 내용을 읽을 수 있어요.</p>
+<h3>구글 드라이브 백업</h3>
+<p>사용자가 구글 계정 연결을 허용하면, 같은 백업 파일을 <b>사용자 본인의 구글 드라이브</b> "NotiSort 백업" 폴더에 올려요.</p>
+<ul>
+<li>요청하는 권한은 <code>drive.file</code> 하나예요. NotiSort가 만든 파일만 읽고 쓸 수 있고, 드라이브의 다른 파일은 볼 수 없어요.</li>
+<li>올린 파일은 사용자 드라이브에만 있고, 개발자는 볼 수 없어요.</li>
+<li>구글 API로 받은 정보는 백업 파일을 올리고 되살리는 데에만 쓰고, 다른 곳에 옮기거나 쓰지 않아요.</li>
+</ul>
+<p>NotiSort가 구글 API에서 받은 정보를 쓰고 옮기는 방식은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>(제한적 사용 요건 포함)을 따릅니다.</p>
+</div>
+
+<h2>4. 지우는 방법</h2>
+<ul>
+<li><b>앱 안 기록</b>: [앱별]에서 앱을 고른 뒤 "이 앱 기록 모두 지우기". 앱을 삭제하면 폰 안의 기록도 모두 지워져요.</li>
+<li><b>폰 폴더 백업</b>: 폰의 "내 파일" 앱에서 백업 폴더를 지우면 돼요.</li>
+<li><b>구글 드라이브 백업</b>: 드라이브에서 "NotiSort 백업" 폴더를 지우면 돼요. NotiSort의 드라이브 접근은 앱의 백업 화면에서 [끊기]로 멈추고, <a href="https://myaccount.google.com/permissions">구글 계정 › 서드파티 앱 및 서비스</a>에서 완전히 해제할 수 있어요.</li>
+</ul>
+
+<h2>5. 바뀌면</h2>
+<p>이 방침이 바뀌면 이 페이지를 고치고 위쪽 시행일을 바꿔요.</p>
+
+<h2>6. 문의</h2>
+<p><a href="https://github.com/kjh11831/notisort/issues">GitHub Issues</a>에 남겨 주세요.</p>
+
+<hr>
+<section id="en" lang="en">
+<h2>Privacy Policy (English summary)</h2>
+<p class="muted">Effective: November 6, 2026</p>
+<ul>
+<li>With your permission (Notification Access), NotiSort records the text of your notifications (app name, sender, title, body, time) and your settings <b>only on your device</b>. Ongoing media notifications are not recorded.</li>
+<li>There is no developer server. NotiSort does not send, sell or share your data with the developer or anyone else, and contains no ads, analytics or crash reporting.</li>
+<li>Optional backup: you can back up to a folder you choose on your phone (unencrypted files) and, if you connect your Google account, to a "NotiSort 백업" folder in <b>your own Google Drive</b>. NotiSort requests only the <code>drive.file</code> scope, so it can access only files it created. Data received from Google APIs is used only to upload and restore your backups.</li>
+<li>NotiSort's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+<li>To delete data: use "delete all records of this app" in the app or uninstall it; delete the backup folder on your phone or in Google Drive; revoke access at <a href="https://myaccount.google.com/permissions">your Google Account</a>.</li>
+<li>Contact: <a href="https://github.com/kjh11831/notisort/issues">GitHub Issues</a>.</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
